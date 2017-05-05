@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% block meta %}{% endblock %}
     {% block extra_css %}{% endblock %}
-    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/manifest.json">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/jonsuh/hamburgers/e8cd462c/dist/hamburgers.css'>
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>
-  <body>
+  <body id="body">
     <div id="page">
       {% include 'partials/navbar.njk' %}
       <main>
@@ -20,11 +26,12 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    <script src="./js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.js"></script>
+    <script src="./js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
+    <script src="./js/index.js"></script>
     {% endblock %}
   </body>
 </html>
