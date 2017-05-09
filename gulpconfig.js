@@ -53,7 +53,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'neopraxis',
+    projectName: 'Neopraxis',
     formattedName: package
   }
 };
