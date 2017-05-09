@@ -31,7 +31,11 @@
   {% endblock %}
   <script src="./js/{{ projectFilesName }}.js"></script>
   {% block js_inline %}
-  <script src="./js/index.js"></script>
+  {% if section == 'index' %}
+    <script src="./js/index.js"></script>
+  {% elif section == 'login'%}
+    <script src="./js/index.js"></script>
+  {% endif %}
   {% endblock %}
 </body>
 </html>
