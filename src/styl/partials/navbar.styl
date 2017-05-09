@@ -148,6 +148,12 @@ font-size remify(19) // Change
 .add-background-white {
   background: white;
 }
+.right-item-nav{
+  float: right !important;
+}
+.no-padding-nav{
+  padding-top: 0px !important;
+}
 .neopraxis-navbar {
   display: flex;
   align-items: center;
@@ -157,6 +163,15 @@ font-size remify(19) // Change
   top:0;
   background: #ffffff;
   z-index: 9999;
+  padding-bottom 32px;
+}
+.navbar-right{
+  padding-left: 0px;
+}
+#neopraxis-main-navbar{
+  padding-left 0px;
+  margin: auto;
+  margin-top 0px;
 }
 section {
   width:100%;
@@ -428,11 +443,12 @@ span.textLogo {
 .fitLogo {
   width 175px
   height auto
-  padding-top 15px
+  padding-top 26px
   margin-top -8px
 }
 .nav {
   zoom: 1;
+  margin: 0;
 }
 
 .nav ul {
@@ -446,7 +462,8 @@ span.textLogo {
   float: left;
   list-style-type: none;
   margin-right: 0.8em;
-  padding-top: 8px;
+  padding-top: 20px;
+  border-top: solid 4px #ffffff;
 }
 .nav a {
   color: #444444;
@@ -486,6 +503,8 @@ span.textLogo {
 .nav li.dropdown.open ul.dropdown-menu {
   background-color: #4D8618;
 }
+.nav li.active
+  border-top solid 4px #6b806c;
 .navbar-register-button
   margin-top -8px
 #neopraxisNavbar
