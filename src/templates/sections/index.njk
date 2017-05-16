@@ -4,6 +4,52 @@
 {% endblock %}
 
 {% block content %}
+<div id="freeTrialModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content cierralo-flex-colum">
+    <div class="modal-close-btn-container">
+      <span class="close"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+    </div>
+    <div class="modal-header neopraxis-flex-column">
+      <div class="modal-title-box">
+        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">Prueba un consultorio de </p>
+        <img src="./img/icons/neopraxis-logo-png@3x.png" class="modal-title-logo inline-block">
+        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">gratis</p>
+      </div>
+      <div class="modal-gold-divider"></div>
+    </div>
+    <div class="modal-body neopraxis-flex-column">
+      <p class="modal-subtitle no-margin-text warm-grey-text letter-spacing-dot-one">Llena tus datos y te contactaremos lo antes posible para tu prueba gratuita</p>
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="contact-body-modal-container neopraxis-flex-column">
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Nombre" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
+          </div>
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Correo electrónico" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
+          </div>
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Teléfono/Celular" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
+          </div>
+          <div class="contact-input-box-textarea">
+            <textarea name="" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" placeholder="Mensaje(Opcional)"></textarea>
+          </div>
+          <div class="contact-checkbox-box neopraxis-flex-row">
+            <input type="checkbox" name="email" value="" class="contact-checkbox inline-block">
+            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por correo</p>
+          </div>
+          <div class="contact-checkbox-box neopraxis-flex-row">
+            <input type="checkbox" name="phone" value="" class="contact-checkbox inline-block">
+            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por teléfono</p>
+          </div>
+          <div class="contact-last-button-container neopraxis-flex-column">
+            <button type="" class="white-text neopraxis-font-montserrat-regular contact-btn cursor-pointer hover-green letter-spacing-dot-six">ENVIAR</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <div class="landing-header">
   <div class="header-parallax">
     <div class="header-navbar neopraxis-flex-row-end">
@@ -43,7 +89,7 @@
       <p class="header-title no-margin-text neopraxis-font-montserrat-bold white-text">Más que rentar Consultorios,
         emprendemos una nueva Práctica</p>
         <p class="header-subtitle no-margin-text neopraxis-font-myriadpro-light white-text">¡Bienvenido a tu Comunidad!</p>
-        <div class="header-try-button cursor-pointer hover-green">
+        <div class="header-try-button cursor-pointer hover-green" id="modalBtn">
           <p class="header-try-button-text no-margin-text uppercase white-text neopraxis-font-montserrat-regular letter-spacing-dot-six">prúebalo gratis</p>
         </div>
       </div>
