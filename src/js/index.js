@@ -44,3 +44,35 @@ document.querySelector("#body").addEventListener( "touchstart",function (e) {
     document.querySelector('#neopraxis-main-navbar').classList.remove('neopraxis-navbar-style');
   }
 });
+var trialModal = document.getElementById('freeTrialModal');
+
+// Get the button that opens the modal
+var modalBtn = document.getElementById("modalBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var body = document.getElementById('body');
+// When the user clicks on the button, open the modal 
+modalBtn.onclick = function() {
+  trialModal.classList.add('modal-open');
+  console.log(body);
+  body.classList.add('modal-open');
+}
+modalBtn.onclick = function() {
+  trialModal.classList.add('modal-open');
+  body.classList.add('modal-open');
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  trialModal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == trialModal) {
+    trialModal.classList.remove('modal-open');
+    body.classList.remove('modal-open');
+  }
+}
