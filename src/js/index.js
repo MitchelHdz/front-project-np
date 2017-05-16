@@ -1,3 +1,11 @@
+$('.faq-button-box').on('click', function(event) {
+  $(this).addClass('active');
+  var faqSection = $(this).attr('id');
+  console.log(faqSection);
+  $('.faq-button-box').not(this).removeClass('active');
+  $('.' + faqSection).addClass('active')
+  $('.faq-box').not($('.' + faqSection)).removeClass('active');
+});
 $( ".closed-slide" ).hover(
 	function() {
 		$(this).hide();
