@@ -237,6 +237,16 @@ body
 	background linear-gradient(45deg, #2ea36f 0%,#155628 100%)
 	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.5)
 	opacity 1
+	transform-style preserve-3d
+  transition transform 2s
+  transform rotateY( 40deg )
+.open-slide:hover + .rotate
+	transition transform 2s
+	transform-origin right center
+	-webkit-transition -webkit-transform .8s ease-in-out
+  transition transform .8s ease-in-out
+	transform rotateY( 80deg )
+	
 .slide-title
 	font-size 14px
 	line-height 19px
@@ -653,6 +663,28 @@ body
 	text-align center
 .contact-body-modal-container
 	padding-top 22px
+.contact-checkbox
+	border-radius 0px
+	background-color white
+	border 0
+	-webkit-appearance none
+	padding 0
+	width 18px
+	height 18px
+	border solid 1px #e6e6e6 !important
+	transition: all 0.1s linear
+	-webkit-transition all 0.1s linear
+	-o-transition all 0.1s linear
+	-moz-transition all 0.1s linear
+.contact-checkbox:checked
+	border-radius 0px;
+	background-color #658c78
+	border 0
+	-webkit-appearance: none
+	padding 0
+	width 18px
+	height 18px
+	border solid 1px #658c78 !important
 @media (max-width: 1100px)
 	.green-image-absolute
 		background url('../img/group-8@3x.png')
