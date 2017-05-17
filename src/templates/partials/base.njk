@@ -31,17 +31,53 @@
   {% endblock %}
   <script src="./js/{{ projectFilesName }}.js"></script>
   {% block js_inline %}
-  {% if section == 'index' %}
-    <script src="./js/index.js"></script>
-  {% elif section == 'login'%}
-    <script src="./js/index.js"></script>
+  {% if section == 'index'%}
+    <script type="text/javascript">
+      var navbar = document.getElementById("neopraxisNavbar");
+      var myScrollFunc = function () {
+          var y = window.scrollY;
+          if (y >= 120) {
+              navbar.classList.add('show');
+          } else {
+              navbar.classList.remove('show');
+          }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+      var modalBtn = document.getElementById("modalBtn");
+      modalBtn.onclick = function() {
+        trialModal.classList.add('modal-open');
+        body.classList.add('modal-open');
+      }
+    </script>
   {% elif section == 'workPlaces'%}
+    
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript">
+      var navbar = document.getElementById("neopraxisNavbar");
+      var myScrollFunc = function () {
+          var y = window.scrollY;
+          if (y >= 120) {
+              navbar.classList.add('show');
+          } else {
+              navbar.classList.remove('show');
+          }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+      var modalBtn = document.getElementById("modalBtn");
       $('.worksplace-carousel').slick({
         nextArrow: '<img class="worksplace-next cursor-pointer" src="./img/icons/flecha-verde-right.png"></img>',
         prevArrow: '<img class="worksplace-prev cursor-pointer" src="./img/icons/flecha-verde-left.png"></img>',
+      });
+    </script>
+  {% elif section == 'memberships'%}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.memberships-slick').slick({
+        infinite: true,
+        nextArrow: '<img class="offices-next cursor-pointer" src="./img/icons/right-arrow-white.png"></img>',
+        prevArrow: '<img class="offices-prev cursor-pointer" src="./img/icons/left-arrow-white.png"></img>',
       });
     </script>
   {% elif section == 'offices'%}
