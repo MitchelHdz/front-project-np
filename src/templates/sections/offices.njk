@@ -4,22 +4,35 @@
 {% endblock %}
 
 {% block content %}
+  <div id="myModal" class="modal">
+    <div class="modal-dialog" id="myModalBox">
+      <!-- Modal content-->
+      <div class="modal-content-offices">
+        <div class="modal-close-btn-container-offices cursor-pointer">
+          <span class="close"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+        </div>
+        <div class="modal-title neopraxis-flex-column">
+          
+        </div>
+        <div class="modal-slider">
+          <div class="office-slider-item-modal"></div>
+          <div class="office-slider-item-modal"></div>
+          <div class="office-slider-item-modal"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div class="offices-body neopraxis-flex-column">
     <h1 class="offices-title no-margin-text neopraxis-font-montserrat-bold charcoal-text">Consultorios</h1>
     <h1 class="offices-subtitle no-margin-text neopraxis-font-myriadpro-regular warm-grey-text letter-spacing-dot-one">Conoce nuestros espacios disponibles</h1>
     <div class="offices-container neopraxis-flex-row">
       <div class="offices-left-container neopraxis-flex-column">
         <div class="office-box">
-          <div class="office-mini-slide " id="green-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+          <div class="office-mini-slide" id="green-slider">
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item green"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item green"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item green"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -30,15 +43,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="mint-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item mint"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item mint"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item mint"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -49,15 +56,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="red-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item red"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item red"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item red"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -68,15 +69,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="violet-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item violet"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item violet"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item violet"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -87,15 +82,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="yellow-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item yellow"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item yellow"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item yellow"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -108,15 +97,9 @@
       <div class="offices-right-container">
         <div class="office-box">
           <div class="office-mini-slide " id="blue-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item blue"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item blue"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item blue"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -127,15 +110,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="orange-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item orange"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item orange"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item orange"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -146,15 +123,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="beige-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item beige"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item beige"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item beige"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -165,15 +136,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="grey-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item grey"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item grey"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item grey"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
@@ -184,15 +149,9 @@
         </div>
         <div class="office-box">
           <div class="office-mini-slide " id="purple-slider">
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
-            <div class="office-slider-item-container">
-              <div class="office-slider-item"></div>
-            </div>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item purple"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item purple"></div></a>
+              <a href="#galleryModal" class="gallery-link"><div class="office-slider-item purple"></div></a>
           </div>
           <div class="office-body neopraxis-flex-column">
             <div class="office-title-box">
