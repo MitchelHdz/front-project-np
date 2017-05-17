@@ -35,27 +35,27 @@
       
         <li class="neopraxis-font-montserrat-regular active">
       
-        <a href="./index.html" class="no-padding-nav">Inicio</a>
+        <a href="./index.html" class="">Inicio</a>
       </li>
       
         <li class="neopraxis-font-montserrat-regular">
       
-        <a href="./services.html" class="no-padding-nav">Servicios</a>
+        <a href="./services.html" class="">Servicios</a>
       </li>
       
         <li class="neopraxis-font-montserrat-regular">
       
-        <a href="./memberships.html" class="no-padding-nav">Membresías</a>
+        <a href="./memberships.html" class="">Membresías</a>
       </li>
       
         <li class="neopraxis-font-montserrat-regular">
       
-        <a href="./tools.html" class="no-padding-nav">Herramientas</a>
+        <a href="./tools.html" class="">Herramientas</a>
       </li>
       
         <li class="neopraxis-font-montserrat-regular">
       
-        <a href="./blog.html" class="no-padding-nav">Blog</a>
+        <a href="./blog.html" class="">Blog</a>
       </li>
   </ul>
     <ul class="nav navbar-nav navbar-right" id="neopraxis-main-navbar-right">
@@ -82,52 +82,6 @@
 </nav>
     <main>
       
-<div id="freeTrialModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content cierralo-flex-colum">
-    <div class="modal-close-btn-container">
-      <span class="close"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
-    </div>
-    <div class="modal-header neopraxis-flex-column">
-      <div class="modal-title-box">
-        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">Prueba un consultorio de </p>
-        <img src="./img/icons/neopraxis-logo-png@3x.png" class="modal-title-logo inline-block">
-        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">gratis</p>
-      </div>
-      <div class="modal-gold-divider"></div>
-    </div>
-    <div class="modal-body neopraxis-flex-column">
-      <p class="modal-subtitle no-margin-text warm-grey-text letter-spacing-dot-one">Llena tus datos y te contactaremos lo antes posible para tu prueba gratuita</p>
-      <form action="" method="get" accept-charset="utf-8">
-        <div class="contact-body-modal-container neopraxis-flex-column">
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Nombre" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Correo electrónico" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Teléfono/Celular" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box-textarea">
-            <textarea name="" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" placeholder="Mensaje(Opcional)"></textarea>
-          </div>
-          <div class="contact-checkbox-box neopraxis-flex-row">
-            <input type="checkbox" name="email" value="" class="contact-checkbox inline-block">
-            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por correo</p>
-          </div>
-          <div class="contact-checkbox-box neopraxis-flex-row">
-            <input type="checkbox" name="phone" value="" class="contact-checkbox inline-block">
-            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por teléfono</p>
-          </div>
-          <div class="contact-last-button-container neopraxis-flex-column">
-            <button type="" class="white-text neopraxis-font-montserrat-regular contact-btn cursor-pointer hover-green letter-spacing-dot-six">ENVIAR</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 <div class="landing-header">
   <div class="header-parallax">
     <div class="header-navbar neopraxis-flex-row-end">
@@ -459,9 +413,9 @@
           <div class="neopraxis-flex-row space-between">
             <div class="contact-form neopraxis-flex-column">
               <form>
-                <input type="text" name="" value="" placeholder="Nombre y apellido" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
-                <input type="text" name="" value="" placeholder="Correo electrónico" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
-                <input type="text" name="" value="" placeholder="Teléfono" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
+                <input type="text" name="" value="" placeholder="Nombre y apellido" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y apellido'" >
+                <input type="text" name="" value="" placeholder="Correo electrónico" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo electrónico'" >
+                <input type="text" name="" value="" placeholder="Teléfono" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono'" >
                 <button type="" class="float-left white-text neopraxis-font-montserrat-regular send-contact-btn cursor-pointer letter-spacing-dot-six">ENVIAR</button>
               </form>
             </div>
@@ -516,45 +470,91 @@
 </div>
 
     </main>
-    <footer class="site-footer neopraxis-flex-column">
+    <div id="freeTrialModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content cierralo-flex-colum">
+    <div class="modal-close-btn-container cursos-pointer">
+      <span class="close"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+    </div>
+    <div class="modal-header neopraxis-flex-column">
+      <div class="modal-title-box">
+        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block neopraxis-font-myriadpro-regular">Prueba un consultorio de </p>
+        <img src="./img/icons/neopraxis-logo-png@3x.png" class="modal-title-logo inline-block">
+        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block neopraxis-font-myriadpro-regular">gratis</p>
+      </div>
+      <div class="modal-gold-divider"></div>
+    </div>
+    <div class="modal-body neopraxis-flex-column">
+      <p class="modal-subtitle no-margin-text warm-grey-text letter-spacing-dot-one neopraxis-font-myriadpro-regular">Llena tus datos y te contactaremos lo antes posible para tu prueba gratuita</p>
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="contact-body-modal-container neopraxis-flex-column">
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Nombre" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'">
+          </div>
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Correo electrónico" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo electrónico'">
+          </div>
+          <div class="contact-input-box landing">
+            <input type="text" name="" value="" placeholder="Teléfono/Celular" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono/Celular'">
+          </div>
+          <div class="contact-input-box-textarea">
+            <textarea name="" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" placeholder="Mensaje(Opcional)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensaje(Opcional)'"></textarea>
+          </div>
+          <div class="contact-checkbox-box neopraxis-flex-row">
+            <input type="checkbox" name="email" value="" class="contact-checkbox inline-block">
+            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por correo</p>
+          </div>
+          <div class="contact-checkbox-box neopraxis-flex-row">
+            <input type="checkbox" name="phone" value="" class="contact-checkbox inline-block">
+            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por teléfono</p>
+          </div>
+          <div class="contact-last-button-container neopraxis-flex-column">
+            <button type="" class="white-text neopraxis-font-montserrat-regular contact-btn cursor-pointer hover-green letter-spacing-dot-six">ENVIAR</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="site-footer neopraxis-flex-column">
   <img src="./img/icons/neopraxis-logo-png-blanco@3x.png" alt="" class="footer-logo">
   <div class="neopraxis-flex-row footer-links-container">
     <div class="links-first-section">
-      <a href="" class="footer-link">
+      <a href="./aboutUs.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Nosotros</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./contact.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Contacto</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./faq.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Faq's</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./community.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Comunidad</p>
       </a>
     </div>
     <div class="links-second-section">
-      <a href="" class="footer-link">
+      <a href="./workPlaces.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Espacios de trabajo</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./offices.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">consultorios</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./memberships.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Membresías</p>
       </a>
-      <a href="" class="footer-link">
+      <a href="./tools.html" class="footer-link">
         <p class="white-text uppercase neopraxis-font-montserrat-regular letter-spacing-dot-six footer-link-text no-margin-text">Herramientas</p>
       </a>
     </div>
     <div class="newsletter-box">
-      <input type="text" name="" value="" placeholder="newsletter" class="newsletter-input neopraxis-font-myriadpro-light uppercase letter-spacing-dot-six">
+      <input type="text" name="" value="" placeholder="newsletter" class="newsletter-input neopraxis-font-myriadpro-light uppercase letter-spacing-dot-six"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'newsletter'">
       <div class="footer-share-box inline-block">
         <img src="./img/icons/facebook-white.png" alt="" class="footer-share-icon">
         <img src="./img/icons/twitter-white.png" alt="" class="footer-share-icon">
-        <img src="./img/icons/twitter-white.png" alt="" class="footer-share-icon last">
+        <img src="./img/icons/instagram.png" alt="" class="footer-share-icon last">
       </div>
-      <button type="" class="float-left white-text neopraxis-font-montserrat-regular newsletter-btn inline-block cursor-pointer letter-spacing-dot-six hover-green">PRUÉBALO GRATIS</button>
+      <button type="" id="footerBtn" class="float-left white-text neopraxis-font-montserrat-regular newsletter-btn inline-block cursor-pointer letter-spacing-dot-six hover-green">PRUÉBALO GRATIS</button>
     </div>
   </div>
   <p class="white-text copyright-text neopraxis-font-myriadpro-light letter-spacing-dot-six no-margin-text">Copyright Neopraxis 2017 All rights reserved</p>
@@ -569,7 +569,23 @@
   <script src="./js/neopraxis.js"></script>
   
   
-    <script src="./js/index.js"></script>
+    <script type="text/javascript">
+      var navbar = document.getElementById("neopraxisNavbar");
+      var myScrollFunc = function () {
+          var y = window.scrollY;
+          if (y >= 120) {
+              navbar.classList.add('show');
+          } else {
+              navbar.classList.remove('show');
+          }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+      var modalBtn = document.getElementById("modalBtn");
+      modalBtn.onclick = function() {
+        trialModal.classList.add('modal-open');
+        body.classList.add('modal-open');
+      }
+    </script>
   
   
 </body>
