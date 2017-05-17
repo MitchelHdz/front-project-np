@@ -1,3 +1,22 @@
+$(document).ready(function() {
+  $("#neopraxisNavbar a,#neopraxisNavbarSite a, .click-scrolling ").on('click', function (event) {
+    event.preventDefault();
+    var pageRef = $(this).attr("href");
+    var offset = 80;
+    if(pageRef[0] != '#') {
+      window.location.href = pageRef;
+    }
+    else{
+      var hash = this.hash;
+      $('html, body').animate({
+          scrollTop: $(hash).offset().top -90
+      }, 800, function () {
+          window.location.hash = hash;
+
+      });
+    }
+  });
+});
 $('.faq-button-box').on('click', function(event) {
   $(this).addClass('active');
   var faqSection = $(this).attr('id');
@@ -47,42 +66,6 @@ $( ".open-slide" ).hover(
     $(this).parent().find('.closed-slide').show();
   }
 );
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
 $('.gallery-link').on('click', function(event) {
   event.preventDefault();
   /* Act on the event */
@@ -160,9 +143,7 @@ $('.modal-close-btn-container-offices').on('click', function(event) {
 $(window).on('click', function(event) {
   event.preventDefault();
   /* Act on the event */
-    console.log('nonono');
   if (event.target == galleryModal || event.target == galleryModalBox) {
-    console.log('sisisi');
     trialModal.classList.remove('modal-open');
     body.classList.remove('modal-open');
     $('#myModal').hide();
