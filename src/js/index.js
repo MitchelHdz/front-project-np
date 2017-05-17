@@ -141,7 +141,6 @@ $('.modal-close-btn-container-offices').on('click', function(event) {
   $('body').removeClass('modal-open');
 });
 $(window).on('click', function(event) {
-  event.preventDefault();
   /* Act on the event */
   if (event.target == galleryModal || event.target == galleryModalBox) {
     trialModal.classList.remove('modal-open');
