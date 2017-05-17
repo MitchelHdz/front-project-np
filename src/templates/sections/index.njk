@@ -4,56 +4,10 @@
 {% endblock %}
 
 {% block content %}
-<div id="freeTrialModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content cierralo-flex-colum">
-    <div class="modal-close-btn-container">
-      <span class="close"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
-    </div>
-    <div class="modal-header neopraxis-flex-column">
-      <div class="modal-title-box">
-        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">Prueba un consultorio de </p>
-        <img src="./img/icons/neopraxis-logo-png@3x.png" class="modal-title-logo inline-block">
-        <p class="modal-title no-margin-text slate-green-text letter-spacing-dot-two inline-block">gratis</p>
-      </div>
-      <div class="modal-gold-divider"></div>
-    </div>
-    <div class="modal-body neopraxis-flex-column">
-      <p class="modal-subtitle no-margin-text warm-grey-text letter-spacing-dot-one">Llena tus datos y te contactaremos lo antes posible para tu prueba gratuita</p>
-      <form action="" method="get" accept-charset="utf-8">
-        <div class="contact-body-modal-container neopraxis-flex-column">
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Nombre" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Correo electrónico" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box landing">
-            <input type="text" name="" value="" placeholder="Teléfono/Celular" class="contact-input landing neopraxis-font-myriadpro-light warm-grey">
-          </div>
-          <div class="contact-input-box-textarea">
-            <textarea name="" class="contact-input landing neopraxis-font-myriadpro-light warm-grey" placeholder="Mensaje(Opcional)"></textarea>
-          </div>
-          <div class="contact-checkbox-box neopraxis-flex-row">
-            <input type="checkbox" name="email" value="" class="contact-checkbox inline-block">
-            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por correo</p>
-          </div>
-          <div class="contact-checkbox-box neopraxis-flex-row">
-            <input type="checkbox" name="phone" value="" class="contact-checkbox inline-block">
-            <p class="neopraxis-font-myriadpro-light warm-grey contact-way-text no-margin-text">Quiero que me contacten por teléfono</p>
-          </div>
-          <div class="contact-last-button-container neopraxis-flex-column">
-            <button type="" class="white-text neopraxis-font-montserrat-regular contact-btn cursor-pointer hover-green letter-spacing-dot-six">ENVIAR</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 <div class="landing-header">
   <div class="header-parallax">
     <div class="header-navbar neopraxis-flex-row-end">
-      <a href="" class="header-link">
+      <a href="./index.html" class="header-link">
         <div class="header-link-box active">
           <p class="no-margin-text neopraxis-font-montserrat-regular header-link-text white-text">Inicio</p>
           <div class="header-link-line">
@@ -61,22 +15,22 @@
           </div>
         </div>
       </a>
-      <a href="" class="header-link">
+      <a href="./services.html" class="header-link">
         <div class="header-link-box active">
           <p class="no-margin-text neopraxis-font-montserrat-regular header-link-text white-text">Servicios</p>
         </div>
       </a>
-      <a href="" class="header-link">
+      <a href="./memberships.html" class="header-link">
         <div class="header-link-box active">
           <p class="no-margin-text neopraxis-font-montserrat-regular header-link-text white-text">Membresías</p>
         </div>
       </a>
-      <a href="" class="header-link">
+      <a href="./tools.html" class="header-link">
         <div class="header-link-box active">
           <p class="no-margin-text neopraxis-font-montserrat-regular header-link-text white-text">Herramientas</p>
         </div>
       </a>
-      <a href="" class="header-link">
+      <a href="./blog.html" class="header-link">
         <div class="header-link-box active">
           <p class="no-margin-text neopraxis-font-montserrat-regular header-link-text white-text">Blog</p>
         </div>
@@ -97,12 +51,12 @@
     <div class="header-right-section">
       <img src="./img/icons/neopraxis-logo-png@3x.png" alt="" class="header-logo">
       <div class="login-container">
-        <a href="" class="login-link">
+        <a href="./login.html" class="login-link">
           <div class="inline-block login-button-box">
             <p class="no-margin-text login-button-text charcoal-text neopraxis-font-montserrat-regular">Iniciar sesión</p>
           </div>
         </a>
-        <a href="" class="login-link">
+        <a href="./register.html" class="login-link">
           <div class="inline-block register-button-box">
             <p class="no-margin-text register-button-text white-text neopraxis-font-montserrat-regular">Registro</p>
           </div>
@@ -129,24 +83,30 @@
         <p class="about-text neopraxis-font-gandhisans-regular no-margin-text line-height-twenty-two greyish-brown-text">No estas solo, aquí harás contacto con una red de colegas e instituciones con un fin en común: <b>establecer una nueva cultura de trabajo para el Psicólogo, que beneficie a toda la sociedad.</b></p>
       </div>
       <div class="services-container neopraxis-flex-row">
-        <div class="service-box neopraxis-flex-column-end cursor-pointer">
-          <div class="service-icon-one">
+        <a href="./workPlaces.html" title="">
+          <div class="service-box neopraxis-flex-column-end cursor-pointer">
+            <div class="service-icon-one">
+            </div>
+            <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Espacios de trabajo</p>
           </div>
-          <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Espacios de trabajo</p>
-        </div>
-        <div class="service-box neopraxis-flex-column-end cursor-pointer">
-          <div class="service-icon-two">
+        </a>
+        <a href="./services.html" title="">
+          <div class="service-box neopraxis-flex-column-end cursor-pointer">
+            <div class="service-icon-two">
+            </div>
+            <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Servicios</p>
           </div>
-          <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Servicios</p>
-        </div>
-        <div class="service-box neopraxis-flex-column-end cursor-pointer">
-          <div class="service-icon-three">
+        </a>
+        <a href="./community.html" title="">
+          <div class="service-box neopraxis-flex-column-end cursor-pointer">
+            <div class="service-icon-three">
+            </div>
+            <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Comunidad</p>
           </div>
-          <p class="service-name neopraxis-font-montserrat-regular no-margin-text">Comunidad</p>
-        </div>
+        </a>
       </div>
       <div class="see-more-button-container neopraxis-flex-column">
-        <a href="" class="button-link">
+        <a href="./aboutUs.html" class="button-link">
           <div class="see-more-button-box hover-green">
             <p class="neopraxis-font-montserrat-regular white-text see-more-btn-text no-margin-text letter-spacing-dot-six">CONOCE MÁS</p>
           </div>
@@ -179,7 +139,8 @@
     <div class="grey-section neopraxis-flex-column">
       <p class="charcoal-text no-margin-text neopraxis-font-myriadpro-light grey-section-title letter-spacing-dot-two">Conoce nuestras <b>Membresías</b></p>
       <div class="slides-container neopraxis-flex-row">
-        <div class="slide-one">
+        <a href="./memberships.html">
+          <div class="slide-one">
           <div class="closed-slide one neopraxis-flex-column">
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">MEMBRESÍA</p>
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">INTRO</p>
@@ -221,8 +182,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="slide-two">
+          </div>
+        </a>
+        <a href="./memberships.html">
+          <div class="slide-two">
           <div class="closed-slide two neopraxis-flex-column">
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">MEMBRESÍA</p>
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">NEO</p>
@@ -264,8 +227,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="slide-three">
+          </div>
+        </a>
+        <a href="./memberships.html">
+          <div class="slide-three">
           <div class="closed-slide three neopraxis-flex-column">
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">MEMBRESÍA</p>
             <p class="closed-slide-text no-margin-text white-text letter-spacing-dot-eight neopraxis-font-myriadpro-light">EXER</p>
@@ -307,10 +272,11 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </a>
       </div>
       <div class="see-more-button-container neopraxis-flex-column">
-        <a href="" class="button-link">
+        <a href="./memberships.html" class="button-link">
           <div class="see-more-button-box hover-green">
             <p class="neopraxis-font-montserrat-regular white-text see-more-btn-text no-margin-text letter-spacing-dot-six">VER MÁS</p>
           </div>
@@ -375,9 +341,9 @@
           <div class="neopraxis-flex-row space-between">
             <div class="contact-form neopraxis-flex-column">
               <form>
-                <input type="text" name="" value="" placeholder="Nombre y apellido" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
-                <input type="text" name="" value="" placeholder="Correo electrónico" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
-                <input type="text" name="" value="" placeholder="Teléfono" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''">
+                <input type="text" name="" value="" placeholder="Nombre y apellido" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y apellido'" >
+                <input type="text" name="" value="" placeholder="Correo electrónico" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo electrónico'" >
+                <input type="text" name="" value="" placeholder="Teléfono" class="white-text neopraxis-font-myriadpro-light input-contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono'" >
                 <button type="" class="float-left white-text neopraxis-font-montserrat-regular send-contact-btn cursor-pointer letter-spacing-dot-six">ENVIAR</button>
               </form>
             </div>
